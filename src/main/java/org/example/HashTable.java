@@ -16,8 +16,10 @@ public class HashTable<K, V> {
 
     /**
      * Конструктор HashMap с указанной емкостью.
+     *
      * @param capacity Емкость таблицы.
      */
+
 
     public HashTable(int capacity) {
         this.capacity = capacity;
@@ -30,6 +32,7 @@ public class HashTable<K, V> {
 
     /**
      * Вычисляет хеш-код для ключа.
+     *
      * @param key Ключ для вычисления хеш-кода.
      * @return Хеш-код ключа.
      */
@@ -38,11 +41,14 @@ public class HashTable<K, V> {
         return Math.abs(key.hashCode()) % capacity;
     }
 
+
     /**
      * Добавляет или обновляет пару ключ-значение в HashMap.
-     * @param key Ключ.
+     *
+     * @param key   Ключ.
      * @param value Значение.
      */
+
 
     public void put(K key, V value) {
         int index = hash(key);
@@ -58,6 +64,7 @@ public class HashTable<K, V> {
 
     /**
      * Возвращает значение по ключу.
+     *
      * @param key Ключ.
      * @return Значение, связанное с ключом, или null, если ключ
      * не найден.
@@ -73,8 +80,10 @@ public class HashTable<K, V> {
         return null;
     }
 
+
     /**
      * Удаляет пару ключ-значение из HashMap.
+     *
      * @param key Ключ.
      */
 
@@ -90,8 +99,9 @@ public class HashTable<K, V> {
     }
 
     /**
-     *  Возвращает размер HashMap.
-     *  @return Размер HashMap.
+     * Возвращает размер HashMap.
+     *
+     * @return Размер HashMap.
      */
 
     public int size() {
@@ -99,8 +109,9 @@ public class HashTable<K, V> {
     }
 
     /**
-     *  Проверяет, пуста ли HashMap.
-     *  @return true, если HashMap пуста,иначе false.
+     * Проверяет, пуста ли HashMap.
+     *
+     * @return true, если HashMap пуста,иначе false.
      */
 
     public boolean isEmpty() {
@@ -109,6 +120,7 @@ public class HashTable<K, V> {
 
     /**
      * Возвращает набор ключей HashMap.
+     *
      * @return Набор ключей HashMap .
      */
 
@@ -123,8 +135,9 @@ public class HashTable<K, V> {
     }
 
     /**
-     *  Возвращает набор значений HashMap.
-     *  @return    Набор значений HashMap .
+     * Возвращает набор значений HashMap.
+     *
+     * @return Набор значений HashMap .
      */
 
     public Set<V> values() {
@@ -138,9 +151,10 @@ public class HashTable<K, V> {
     }
 
     /**
-     *  Внутренний клас для хранения пары ключ-значение.
-     *  @param <K> Тип ключа.
-     *  @param <V> Тип значения.
+     * Внутренний клас для хранения пары ключ-значение.
+     *
+     * @param <K> Тип ключа.
+     * @param <V> Тип значения.
      */
 
     private static class Entry<K, V> {
@@ -148,16 +162,16 @@ public class HashTable<K, V> {
         private V value;
 
         /**
-         *  Конструктор Entry.
-         *  @param key Ключ.
-         *  @param value Значение.
+         * Конструктор Entry.
+         *
+         * @param key   Ключ.
+         * @param value Значение.
          */
+
 
         public Entry(K key, V value) {
             this.key = key;
             this.value = value;
         }
     }
-
-
 }
