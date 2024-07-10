@@ -23,7 +23,6 @@ public class HashTableTest {
         assertEquals(Integer.valueOf(2), ht.get("Dog"));
         assertEquals(Integer.valueOf(3), ht.get("Rabbit"));
     }
-
     /**
      * Тест перезаписи существующего значения при добавлении.
      * Проверяет перезапись значения для существующего ключа.
@@ -33,11 +32,9 @@ public class HashTableTest {
         HashTable<String, Integer> ht = new HashTable<>(10);
         ht.put("Cat", 1);
         ht.put("Cat", 2);
-
         assertEquals(1, ht.size());
         assertEquals(Integer.valueOf(2), ht.get("Cat"));
     }
-
     /**
      * Тест удаления элемента по ключу.
      * Проверяет удаление пары ключ-значение и изменение размера.
@@ -48,13 +45,11 @@ public class HashTableTest {
         ht.put("Cat", 1);
         ht.put("Dog", 2);
         ht.put("Rabbit", 3);
-
         ht.remove("Dog");
 
         assertEquals(2, ht.size());
         assertNull(ht.get("Dog"));
     }
-
     /**
      * Тест попытки удаления несуществующего элемента.
      */
@@ -66,7 +61,6 @@ public class HashTableTest {
         ht.put("Rabbit", 3);
 
         ht.remove("Fish");
-
         assertEquals(3, ht.size());
     }
 
