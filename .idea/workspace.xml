@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="887f2951-3193-40c6-84ae-0cad44bb3ae8" name="Changes" comment="First lesson is changed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HashTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HashTableTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="887f2951-3193-40c6-84ae-0cad44bb3ae8" name="Changes" comment="First lesson is changed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,8 +162,33 @@
       <option name="project" value="LOCAL" />
       <updated>1720648673903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First lesson is changed">
+      <created>1720649882655</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720649882655</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First lesson is changed">
+      <created>1720650019175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720650019175</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="master" />
